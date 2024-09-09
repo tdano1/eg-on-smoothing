@@ -30,7 +30,7 @@ python sampler.py cifar10/imagenet [model] 0.25/0/50/1.00 0.25/0.50/1.0/2.0/4.0/
 
 Then run the script for distribution $\mathcal{Q}$:
 ```
-python sampler.py cifar10/imagenet [model] 0.25/0/50/1.00 1.0/2.0/4.0/8.0 --disttype exponential-standard-gaussian --N 50000 --alpha 0.0005 --skip 10/50 --batch 400
+python sampler.py cifar10/imagenet [model] 0.25/0/50/1.00 1.0/2.0/4.0/8.0 --disttype exponential-standard-gaussian --N 50000 --alpha 0.0005 --skip 10/50 --batch 400 --th x+ --exth
 
 python sampler.py cifar10/imagenet [model] 0.25/0/50/1.00 0.25/0.50/1.0/2.0/4.0/8.0 --disttype exponential-general-gaussian --k 1530/75260 --N 50000 --alpha 0.0005 --skip 10/50 --batch 400 --th x+ --exth 
 ```
